@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="tmpl.js"></script>
+<script src="main.js"></script>
+</head>
+<body>
+	<div id="content1"></div>
+	<div id="content2"></div>
+
+<script type="text/html" id="component2">
+	<table>
+	   <thead>
+	   	<tr>
+	   		<th>Name</th>
+	   		<th>Gender</th>
+	   		<th>Email</th>
+	   	</tr>
+	   </thead>
+	   <tbody>
+	   	 <% data.forEach(function(i){ 
+	   	 	console.log(i);
+	   	 %>
+	   	   <tr>
+	   	   		<td><%= i.name %></td>
+	   	   		<td><%= i.gender %></td>
+	   	   		<td><%= i.email %></td>
+	   	   </tr>
+	   	 <% }); %>
+	   </tbody>
+	   <tfoot></tfoot>
+	</table>
+</script>
+</body>
+</html>

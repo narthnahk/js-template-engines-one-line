@@ -1,0 +1,22 @@
+<script type="text/html" id="component1">
+	<table>
+	   <thead>
+	   	<tr>
+	   		<th>Name</th>
+	   		<th>Gender</th>
+	   		<th>Email</th>
+	   	</tr>
+	   </thead>
+	   <tbody>
+	   	 <% data.forEach(function(i){ %>
+	   	   <tr>
+	   	   		<td><%= i.name %></td>
+	   	   		<td><%= i.gender %></td>
+	   	   		<td><%= i.email %></td>
+	   	   </tr>
+	   	 <% }); %>
+	   </tbody>
+	   <tfoot></tfoot>
+	</table>
+
+</script>
